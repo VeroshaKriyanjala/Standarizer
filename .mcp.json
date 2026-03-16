@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "gitea": {
+      "type": "stdio",
+      "command": "/home/verosha/.nvm/versions/node/v24.13.0/bin/gitea-mcp",
+      "args": [
+        "-t", "stdio",
+        "--host", "https://git.cloudsolutions.com.sa",
+        "--token", "3c42c6d2c368c4c1b489463747e1bd137e8ced8c"
+      ]
+    }
+  }
+}

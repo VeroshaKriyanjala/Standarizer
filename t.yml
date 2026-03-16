@@ -1,0 +1,124 @@
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+bases:
+  - https://git.cloudsolutions.com.sa/BASE/DEPLOYMENT-BASE-REPO/ehr/csi-ehr-data-stream-core
+
+resources:
+- ../../../DM-Initiator/
+
+patchesStrategicMerge:
+- hpa.yaml
+
+images:
+  - name: harbor.moh.gov.sa/vidamoh/csi-ehr-common-java-sev
+    newName: harbors3.moh.gov.sa/vidamoh/csi-ehr-data-stream-core
+    newTag: 4.0.0.0_dev #4.4.0.99_prod #4.4.0.95_prod #4.2409.22_IR9_qa 
+    
+namespace: vida-uat
+
+patchesJson6902:
+- target:
+    group: apps
+    version: v1
+    kind: Deployment
+    name: csi-ehr-data-stream-core
+  patch: |-
+    - op: replace
+      path: /spec/template/spec/containers/0/resources/limits/memory
+      value: 1.5Gi
+    - op: replace
+      path: /spec/template/spec/containers/0/resources/requests/cpu
+      value: 50m
+    - op: replace
+      path: /spec/template/spec/containers/0/resources/requests/memory
+      value: 256Mi         
+
+patchesJson6902:
+- target:
+    group: batch
+    version: v1
+    kind: Job
+    name: sync-presync
+  patch: |-
+    - op: replace
+      path: /metadata/name
+      value: before-csi-ehr-data-stream-core
+    - op: add
+      path: /spec/template/spec/containers/0/env/-
+      value:
+        name: CSI_PROJECT_NAME
+        value: "csi-ehr-data-stream-core"
+- target:
+    group: batch
+    version: v1
+    kind: Job
+    name: sync-postsync
+  patch: |-
+    - op: add
+      path: /spec/template/spec/containers/0/env/-
+      value:
+        name: CSI_PROJECT_NAME
+        value: "csi-ehr-data-stream-core"
+    - op: replace
+      path: /metadata/name
+      value: after-csi-ehr-data-stream-core
+  # - target:
+  #     group: batch
+  #     version: v1
+  #     kind: Job
+  #     name: .*
+  #   patch: |-
+  #     - op: replace
+  #       path: /metadata/name
+  #       value: before-ehr-data-stream-core
+  #     - op: add
+  #       path: /spec/template/spec/containers/0/env/-
+  #       value:
+  #         name: CSI_MODULENAME
+  #         value: "ehr-data-stream-core"
+  #     - op: add
+  #       path: /spec/template/spec/containers/0/env/-
+  #       value:
+  #         name: CSI_DATA_VERSION
+  #         value: "4.1.170.0"
+  #     - op: add
+  #       path: /spec/template/spec/containers/0/env/-
+  #       value:
+  #         name: CSI_PROJECT_NAME
+  #         value: "csi-ehr-data-stream-core"
+  #     - op: add
+  #       path: /spec/template/spec/containers/0/env/-
+  #       value:
+  #         name: CSI_MODULE_NAME
+  #         value: "csi-ehr-data-stream-core"
+  #     - op: add
+  #       path: /spec/template/spec/containers/0/env/-
+  #       value:
+  #         name: CSI_PARENT_MODULE_NAME
+  #         value: "ehr"
+                        
+  - target: 
+      group: apps
+      version: v1
+      kind: Deployment
+      name: csi-ehr-data-stream-core
+    patch: |-
+      - op: add
+        path: /spec/template/spec/containers/0/volumeMounts
+        value: []          
+      - op: add
+        path: /spec/template/spec/containers/0/volumeMounts/-
+        value:
+          name: www-persistent-storage
+          mountPath: /tmp/kafka-streams
+      - op: add
+        path: /spec/template/spec/volumes
+        value: []
+      - op: add
+        path: /spec/template/spec/volumes/-
+        value:
+          name: www-persistent-storage
+          persistentVolumeClaim:
+            claimName: nfs-pvc

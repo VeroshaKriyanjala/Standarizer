@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//home/verosha/Documents/gittea/Alibaba/UAT/**)",
+      "Read(//home/verosha/Documents/gittea/Alibaba/PROD/**)",
+      "Bash(for repo in Alibaba KKUH WAVE1)",
+      "Bash(do echo \"=== $repo ===\")",
+      "Bash(git -C \"/home/verosha/Documents/gittea/$repo\" log --oneline -1)",
+      "Bash(done)",
+      "Bash(ls /home/verosha/Documents/gittea/Standarizer/*.py /home/verosha/Documents/gittea/Standarizer/*.md)",
+      "Bash(python compare_service_names.py)",
+      "Bash(for repo in KKUH Alibaba WAVE1)",
+      "Read(//home/verosha/Documents/gittea/$repo/**)",
+      "Bash(python compare_uat_current_names.py)",
+      "Bash(python fix_uat_inconsistencies.py --dry-run)",
+      "Bash(for repo in CS KAUH S2 S3 HMG DEPLOYMENT-BASE-REPO)",
+      "Read(//home/verosha/Documents/gittea/DEPLOYMENT-BASE-REPO/**)",
+      "Bash(python compare_all_repos_uat.py)",
+      "Bash(python compare_actual_names.py)",
+      "Bash(python generate_folder_tree_dirs_only_with_deployments.py)",
+      "Read(//home/verosha/Documents/gittea/KKUH/UAT/**)",
+      "Read(//home/verosha/Documents/gittea/KAUH/UAT/**)",
+      "Bash(# Check if PROD already exists for any repo ls /home/verosha/Documents/gittea/KKUH/PROD/)",
+      "Read(//home/verosha/Documents/gittea/KKUH/PROD/bloodbank/bb-bloodbankgui/**)",
+      "Read(//home/verosha/Documents/gittea/KKUH/PROD/bloodbank/**)",
+      "Read(//home/verosha/Documents/gittea/KKUH/PROD/**)",
+      "Bash(# Check how many repos we need to handle ls /home/verosha/Documents/gittea/KKUH/UAT/ /home/verosha/Documents/gittea/KAUH/UAT/ /home/verosha/Documents/gittea/Alibaba/UAT/)",
+      "Read(//home/verosha/Documents/gittea/Alibaba/**)",
+      "Read(//home/verosha/Documents/gittea/**)"
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+# More Rules Execution Log - HMG
+
+Mode: LIVE
+
+## Rules Applied
+
+- **Rule 1**: Replace CENTRAL-BASE-REPO with DEPLOYMENT-BASE-REPO in bases
+- **Rule 2**: Do not change images section (preserved)
+- **Rule 3**: Update patchesJson6902 Deployment target name
+- **Rule 4**: Update metadata.name and container name in hpa.yaml, patch-hpa.yaml, patch-pod.yaml
+
+## Changes (200 total)
+
+- Rule 1: 105 changes
+- Rule 3: 7 changes
+- Rule 4: 88 changes
+
+- `apigateway/api-gateway`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `base/base-utility-service-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `base/csi-personalization-service-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `base/csi-uif-admin-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `base/csi-uif-settings`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `base/document-generator-core`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `billing/csi-bm-approval-java-service`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `billing/csi-bm-approval-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `billing/csi-bm-billing-java-service`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `billing/csi-bm-billing-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `billing/csi-bm-inte-bridge-java-service`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `billing/csi-bm-invoice-java-service`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `billing/csi-bm-invoice-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `billing/csi-bm-promotion-java-service`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `bloodbank/bb-bloodbankgui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `bloodbank/bb-donation-srv`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `bloodbank/csi-blood-transfusion-java`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `bloodbank/csi-java-bb-service`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `bloodbank/csi-net-bb-mgt-srv`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `cssd/csi-cssd-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `cssd/csi-cssd-node-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `cssd/csi-cssd-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `dms/csi-dms-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `dms/csi-document-management-service`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `dms/document-management-middleware`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `econsent/e-consent-v2`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-com-ip-dashboardwidget-dotnet-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-com-ip-discharge-dotnet-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-com-opd-master-dotnet-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-com-opd-patient-dotnet-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-common-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-common-scheduler-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-config-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-ic-bundle-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-ic-dashboard-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-initialassessment-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-ip-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-ldr-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-listener-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-opd-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-opd-patient-pomr-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-opd-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-or-anesthesia-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-or-book-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-or-booking-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-specialized-clinic-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-ehr-template-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/csi-workflow-automation-service-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `ehr/ehr-ic-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `empi/csi-empi-crs-integration`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `empi/csi-empi-hijridate-service`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `empi/csi-empi-patient-registration-srv`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `empi/csi-empi-patient-service-read`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `empi/csi-empi-webui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `er/csi-ehr-er-functions-dotnet-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `er/csi-ehr-er-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `hhc/hhc-service`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `hhc/hhc-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `him/csi-health-information-srv`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `him/csi-him-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `integration/csi-ie-general`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `integration/csi-ie-generalii`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `integration/csi-ie-mobile`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `integration/vida-data-gateway`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `lab/lab-labgui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `lab/lab-labmgt-srv`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `lab/lab-scheduled`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `lab/lab-vidaptor-integration`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `notification/csi-net-base-email`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `notification/csi-net-base-message-templates`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `notification/csi-net-base-notifications`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `notification/csi-net-base-notifications-query`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `notification/csi-net-base-sms`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `notification/csi-net-base-wss`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `notification/noty-builder-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `otp-service`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `pharmacy/csi-java-ehr-ip-doctor-prescription`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `pharmacy/csi-net-base-integrations-medispan`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `pharmacy/csi-phr-base`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `pharmacy/csi-phr-cron`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `pharmacy/phr-pharmacygui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `pharmacy/phr-ui-v2`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `renal/ren-hemodialysis-srv`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `reporting/csi-rf-file-uploader`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `reporting/csi-rf-jdbc-sink`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `reporting/csi-rf-reportingservice`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `reporting/csi-streaming-etl`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `reporting/report-studio-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `rms/csi-ds-dental-core-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `rms/csi-mlm-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `rms/csi-morgue-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `rms/csi-pms-adt-request-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `rms/csi-pms-adt-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `rms/csi-rms-masterdata-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `rms/csi-rms-morgue-java-service`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `rms/csi-rms-reservation-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `rms/csi-rms-resource-registry-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `rms/csi-rms-rules-java-sev`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `rms/csi-rms-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `rms/csi-setup-ui`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `security/csi-iam-service`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `security/csi-master-data-management-service`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `security/csi-roles-permissions-management-service`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `security/csi-ui-registry-service`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `support-portal/support-portal`: Rule 1: Updated base URL to DEPLOYMENT-BASE-REPO
+- `empi/csi-empi-crs-integration`: Rule 3: Updated patchesJson6902 Deployment target name to 'csi-empi-crs-integration'
+- `empi/csi-empi-hijridate-service`: Rule 3: Updated patchesJson6902 Deployment target name to 'csi-empi-hijridate-service'
+- `empi/csi-empi-patient-registration-srv`: Rule 3: Updated patchesJson6902 Deployment target name to 'csi-empi-patient-registration-srv'
+- `empi/csi-empi-patient-service-read`: Rule 3: Updated patchesJson6902 Deployment target name to 'csi-empi-patient-service-read'
+- `reporting/csi-rf-reportingservice`: Rule 3: Updated patchesJson6902 Deployment target name to 'csi-rf-reportingservice'
+- `rms/csi-rms-reservation-java-sev`: Rule 3: Updated patchesJson6902 Deployment target name to 'csi-rms-reservation-java-sev'
+- `rms/csi-rms-resource-registry-java-sev`: Rule 3: Updated patchesJson6902 Deployment target name to 'csi-rms-resource-registry-java-sev'
+- `base/base-utility-service-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'base-utility-service-java-sev'
+- `base/csi-personalization-service-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-personalization-service-java-sev'
+- `base/csi-uif-admin-ui`: Rule 4: patch-pod.yaml - updated name to 'csi-uif-admin-ui'
+- `base/csi-uif-settings`: Rule 4: patch-pod.yaml - updated name to 'csi-uif-settings'
+- `billing/csi-bm-approval-java-service`: Rule 4: patch-hpa.yaml - updated name to 'csi-bm-approval-java-service'
+- `billing/csi-bm-approval-ui`: Rule 4: patch-pod.yaml - updated name to 'csi-bm-approval-ui'
+- `billing/csi-bm-billing-ui`: Rule 4: patch-pod.yaml - updated name to 'csi-bm-billing-ui'
+- `bloodbank/bb-bloodbankgui`: Rule 4: patch-hpa.yaml - updated name to 'bb-bloodbankgui'
+- `bloodbank/bb-bloodbankgui`: Rule 4: patch-pod.yaml - updated name to 'bb-bloodbankgui'
+- `bloodbank/bb-donation-srv`: Rule 4: patch-hpa.yaml - updated name to 'bb-donation-srv'
+- `bloodbank/csi-blood-transfusion-java`: Rule 4: patch-hpa.yaml - updated name to 'csi-blood-transfusion-java'
+- `bloodbank/csi-net-bb-mgt-srv`: Rule 4: hpa.yaml - updated name to 'csi-net-bb-mgt-srv'
+- `ehr/csi-ehr-com-ip-dashboardwidget-dotnet-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-com-ip-dashboardwidget-dotnet-sev'
+- `ehr/csi-ehr-com-ip-dashboardwidget-dotnet-sev`: Rule 4: patch-pod.yaml - updated name to 'csi-ehr-com-ip-dashboardwidget-dotnet-sev'
+- `ehr/csi-ehr-com-ip-discharge-dotnet-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-com-ip-discharge-dotnet-sev'
+- `ehr/csi-ehr-com-ip-discharge-dotnet-sev`: Rule 4: patch-pod.yaml - updated name to 'csi-ehr-com-ip-discharge-dotnet-sev'
+- `ehr/csi-ehr-com-opd-master-dotnet-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-com-opd-master-dotnet-sev'
+- `ehr/csi-ehr-com-opd-patient-dotnet-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-com-opd-patient-dotnet-sev'
+- `ehr/csi-ehr-common-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-common-java-sev'
+- `ehr/csi-ehr-common-java-sev`: Rule 4: patch-pod.yaml - updated name to 'csi-ehr-common-java-sev'
+- `ehr/csi-ehr-common-scheduler-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-common-scheduler-java-sev'
+- `ehr/csi-ehr-common-scheduler-java-sev`: Rule 4: patch-pod.yaml - updated name to 'csi-ehr-common-scheduler-java-sev'
+- `ehr/csi-ehr-config-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-config-java-sev'
+- `ehr/csi-ehr-config-java-sev`: Rule 4: patch-pod.yaml - updated name to 'csi-ehr-config-java-sev'
+- `ehr/csi-ehr-ic-bundle-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-ic-bundle-java-sev'
+- `ehr/csi-ehr-ic-dashboard-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-ic-dashboard-java-sev'
+- `ehr/csi-ehr-initialassessment-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-initialassessment-java-sev'
+- `ehr/csi-ehr-ip-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-ip-java-sev'
+- `ehr/csi-ehr-ip-java-sev`: Rule 4: patch-pod.yaml - updated name to 'csi-ehr-ip-java-sev'
+- `ehr/csi-ehr-ldr-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-ldr-java-sev'
+- `ehr/csi-ehr-listener-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-listener-java-sev'
+- `ehr/csi-ehr-opd-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-opd-java-sev'
+- `ehr/csi-ehr-opd-java-sev`: Rule 4: patch-pod.yaml - updated name to 'csi-ehr-opd-java-sev'
+- `ehr/csi-ehr-opd-patient-pomr-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-opd-patient-pomr-java-sev'
+- `ehr/csi-ehr-opd-patient-pomr-java-sev`: Rule 4: patch-pod.yaml - updated name to 'csi-ehr-opd-patient-pomr-java-sev'
+- `ehr/csi-ehr-opd-ui`: Rule 4: patch-pod.yaml - updated name to 'csi-ehr-opd-ui'
+- `ehr/csi-ehr-or-anesthesia-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-or-anesthesia-java-sev'
+- `ehr/csi-ehr-or-book-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-or-book-java-sev'
+- `ehr/csi-ehr-or-booking-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-or-booking-java-sev'
+- `ehr/csi-ehr-specialized-clinic-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-specialized-clinic-java-sev'
+- `ehr/csi-ehr-template-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-template-java-sev'
+- `ehr/csi-workflow-automation-service-java-sev`: Rule 4: hpa.yaml - updated name to 'csi-workflow-automation-service-java-sev'
+- `ehr/ehr-ic-ui`: Rule 4: patch-pod.yaml - updated name to 'ehr-ic-ui'
+- `empi/csi-empi-crs-integration`: Rule 4: patch-pod.yaml - updated name to 'csi-empi-crs-integration'
+- `empi/csi-empi-hijridate-service`: Rule 4: patch-pod.yaml - updated name to 'csi-empi-hijridate-service'
+- `empi/csi-empi-patient-registration-srv`: Rule 4: patch-hpa.yaml - updated name to 'csi-empi-patient-registration-srv'
+- `empi/csi-empi-patient-service-read`: Rule 4: patch-hpa.yaml - updated name to 'csi-empi-patient-service-read'
+- `empi/csi-empi-patient-service-read`: Rule 4: patch-pod.yaml - updated name to 'csi-empi-patient-service-read'
+- `empi/csi-empi-webui`: Rule 4: patch-pod.yaml - updated name to 'csi-empi-webui'
+- `er/csi-ehr-er-functions-dotnet-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ehr-er-functions-dotnet-sev'
+- `him/csi-health-information-srv`: Rule 4: patch-hpa.yaml - updated name to 'csi-health-information-srv'
+- `him/csi-health-information-srv`: Rule 4: patch-pod.yaml - updated name to 'csi-health-information-srv'
+- `lab/lab-labgui`: Rule 4: patch-pod.yaml - updated name to 'lab-labgui'
+- `lab/lab-labmgt-srv`: Rule 4: patch-hpa.yaml - updated name to 'lab-labmgt-srv'
+- `lab/lab-labmgt-srv`: Rule 4: patch-pod.yaml - updated name to 'lab-labmgt-srv'
+- `lab/lab-scheduled`: Rule 4: patch-hpa.yaml - updated name to 'lab-scheduled'
+- `lab/lab-scheduled`: Rule 4: patch-pod.yaml - updated name to 'lab-scheduled'
+- `lab/lab-vidaptor-integration`: Rule 4: hpa.yaml - updated name to 'lab-vidaptor-integration'
+- `lab/lab-vidaptor-integration`: Rule 4: patch-pod.yaml - updated name to 'lab-vidaptor-integration'
+- `notification/csi-net-base-email`: Rule 4: hpa.yaml - updated name to 'csi-net-base-email'
+- `notification/csi-net-base-email`: Rule 4: patch-pod.yaml - updated name to 'csi-net-base-email'
+- `notification/csi-net-base-message-templates`: Rule 4: hpa.yaml - updated name to 'csi-net-base-message-templates'
+- `notification/csi-net-base-message-templates`: Rule 4: patch-pod.yaml - updated name to 'csi-net-base-message-templates'
+- `notification/csi-net-base-notifications`: Rule 4: patch-hpa.yaml - updated name to 'csi-net-base-notifications'
+- `notification/csi-net-base-notifications-query`: Rule 4: patch-hpa.yaml - updated name to 'csi-net-base-notifications-query'
+- `notification/csi-net-base-sms`: Rule 4: hpa.yaml - updated name to 'csi-net-base-sms'
+- `notification/csi-net-base-sms`: Rule 4: patch-pod.yaml - updated name to 'csi-net-base-sms'
+- `notification/noty-builder-ui`: Rule 4: hpa.yaml - updated name to 'noty-builder-ui'
+- `pharmacy/csi-net-base-integrations-medispan`: Rule 4: hpa.yaml - updated name to 'csi-net-base-integrations-medispan'
+- `pharmacy/csi-net-base-integrations-medispan`: Rule 4: patch-pod.yaml - updated name to 'csi-net-base-integrations-medispan'
+- `pharmacy/phr-pharmacygui`: Rule 4: hpa.yaml - updated name to 'phr-pharmacygui'
+- `pharmacy/phr-pharmacygui`: Rule 4: patch-pod.yaml - updated name to 'phr-pharmacygui'
+- `pharmacy/phr-ui-v2`: Rule 4: hpa.yaml - updated name to 'phr-ui-v2'
+- `renal/ren-hemodialysis-srv`: Rule 4: patch-hpa.yaml - updated name to 'ren-hemodialysis-srv'
+- `reporting/csi-rf-reportingservice`: Rule 4: patch-hpa.yaml - updated name to 'csi-rf-reportingservice'
+- `reporting/csi-rf-reportingservice`: Rule 4: patch-pod.yaml - updated name to 'csi-rf-reportingservice'
+- `reporting/report-studio-ui`: Rule 4: patch-pod.yaml - updated name to 'report-studio-ui'
+- `rms/csi-ds-dental-core-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-ds-dental-core-java-sev'
+- `rms/csi-pms-adt-request-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-pms-adt-request-java-sev'
+- `rms/csi-pms-adt-ui`: Rule 4: patch-pod.yaml - updated name to 'csi-pms-adt-ui'
+- `rms/csi-rms-masterdata-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-rms-masterdata-java-sev'
+- `rms/csi-rms-morgue-java-service`: Rule 4: hpa.yaml - updated name to 'csi-rms-morgue-java-service'
+- `rms/csi-rms-reservation-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-rms-reservation-java-sev'
+- `rms/csi-rms-resource-registry-java-sev`: Rule 4: patch-hpa.yaml - updated name to 'csi-rms-resource-registry-java-sev'
+- `rms/csi-rms-resource-registry-java-sev`: Rule 4: patch-pod.yaml - updated name to 'csi-rms-resource-registry-java-sev'
+- `rms/csi-rms-rules-java-sev`: Rule 4: hpa.yaml - updated name to 'csi-rms-rules-java-sev'
+- `rms/csi-rms-rules-java-sev`: Rule 4: patch-pod.yaml - updated name to 'csi-rms-rules-java-sev'
+- `security/csi-iam-service`: Rule 4: patch-hpa.yaml - updated name to 'csi-iam-service'
