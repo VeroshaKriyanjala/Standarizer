@@ -2,7 +2,7 @@
 
 Based on UAT rename history (`final.md`) and PROD git history.
 
-## Planned Renames (93)
+## Planned Renames (95)
 
 Old name found in PROD, will be renamed to new standard name.
 
@@ -79,6 +79,7 @@ Old name found in PROD, will be renamed to new standard name.
 | `PROD/pharmacy/ehripprescriptionjava` | `PROD/pharmacy/csi-java-ehr-ip-doctor-prescription` |
 | `PROD/pharmacy/medispan` | `PROD/pharmacy/csi-net-base-integrations-medispan` |
 | `PROD/pharmacy/pharmacyui` | `PROD/pharmacy/phr-pharmacygui` |
+| `PROD/pharmacy/phrbasebgjava` | `PROD/pharmacy/csi-phr-base-bgservice` |
 | `PROD/pharmacy/phrbasejava` | `PROD/pharmacy/csi-phr-base` |
 | `PROD/renal/renalnet` | `PROD/renal/ren-hemodialysis-srv` |
 | `PROD/reporting/csistreamingetl` | `PROD/reporting/csi-streaming-etl` |
@@ -97,6 +98,7 @@ Old name found in PROD, will be renamed to new standard name.
 | `PROD/rms/rmsrules` | `PROD/rms/csi-rms-rules-java-sev` |
 | `PROD/rms/rmsui` | `PROD/rms/csi-rms-ui` |
 | `PROD/rms/setupui` | `PROD/rms/csi-setup-ui` |
+| `PROD/security/securitycentralauth` | `PROD/security/csi-central-authentication-service` |
 | `PROD/security/securityiamservice` | `PROD/security/csi-iam-service` |
 | `PROD/security/securitymasterdatamgt` | `PROD/security/csi-master-data-management-service` |
 | `PROD/security/securityrolespermissions` | `PROD/security/csi-roles-permissions-management-service` |
@@ -123,11 +125,105 @@ Neither old nor new name exists in this repo's PROD.
 
 ---
 
-## Git History - Matches (0)
+## Git History - Matches (93)
 
 PROD git rename history **agrees** with `final.md`.
 
-No matches found.
+| Current Folder | Previous Name |
+|---|---|
+| `PROD/apigateway/api-gateway` | `PROD/api-gateway/apigateway` |
+| `PROD/base/base-utility-service-java-sev` | `PROD/base/baseutilityservicejava` |
+| `PROD/base/csi-personalization-service-java-sev` | `PROD/base/personalizationjava` |
+| `PROD/base/csi-uif-admin-ui` | `PROD/base/formbuilderui` |
+| `PROD/base/csi-uif-settings` | `PROD/base/configui` |
+| `PROD/billing/csi-bm-approval-java-service` | `PROD/billing/bmbillingapprovaljava` |
+| `PROD/billing/csi-bm-approval-ui` | `PROD/billing/bmapprovalui` |
+| `PROD/billing/csi-bm-billing-java-service` | `PROD/billing/bmbillingjava` |
+| `PROD/billing/csi-bm-billing-ui` | `PROD/billing/billingmasterui` |
+| `PROD/billing/csi-bm-invoice-java-service` | `PROD/billing/bmbillinginvoicejava` |
+| `PROD/billing/csi-bm-invoice-ui` | `PROD/billing/bminvoiceui` |
+| `PROD/bloodbank/bb-bloodbankgui` | `PROD/bloodbank/bloodbankui` |
+| `PROD/bloodbank/bb-donation-srv` | `PROD/bloodbank/bloodbanknet` |
+| `PROD/bloodbank/csi-blood-transfusion-java` | `PROD/bloodbank/bloodtransfusionjava` |
+| `PROD/bloodbank/csi-java-bb-service` | `PROD/bloodbank/bloodbankjava` |
+| `PROD/bloodbank/csi-net-bb-mgt-srv` | `PROD/bloodbank/csinetbbmgtsrv` |
+| `PROD/dms/csi-dms-ui` | `PROD/dms/dmsui` |
+| `PROD/dms/document-management-engine` | `PROD/dms/dmsstorageengine` |
+| `PROD/dms/document-management-middleware` | `PROD/dms/dmsmiddleware` |
+| `PROD/econsent/e-consent` | `PROD/econsent/econsent` |
+| `PROD/econsent/e-consent-ui` | `PROD/econsent/econsentui` |
+| `PROD/ehr/csi-ehr-com-ip-dashboardwidget-dotnet-sev` | `PROD/ehr/ehripdashboardwiddotnet` |
+| `PROD/ehr/csi-ehr-com-ip-discharge-dotnet-sev` | `PROD/ehr/ehripdischargedotnet` |
+| `PROD/ehr/csi-ehr-com-opd-master-dotnet-sev` | `PROD/ehr/ehropdmasterdotnet` |
+| `PROD/ehr/csi-ehr-com-opd-patient-dotnet-sev` | `PROD/ehr/ehropdpatientdotnet` |
+| `PROD/ehr/csi-ehr-common-java-sev` | `PROD/ehr/ehrcommonjava` |
+| `PROD/ehr/csi-ehr-common-scheduler-java-sev` | `PROD/ehr/ehrschedulerjava` |
+| `PROD/ehr/csi-ehr-config-java-sev` | `PROD/ehr/ehrconfigjava` |
+| `PROD/ehr/csi-ehr-ic-bundle-java-sev` | `PROD/ehr/ehricbundlejava` |
+| `PROD/ehr/csi-ehr-ic-dashboard-java-sev` | `PROD/ehr/ehricdashboardjava` |
+| `PROD/ehr/csi-ehr-initialassessment-java-sev` | `PROD/ehr/ehrintitialassessjava` |
+| `PROD/ehr/csi-ehr-ip-java-sev` | `PROD/ehr/ehripjava` |
+| `PROD/ehr/csi-ehr-ldr-java-sev` | `PROD/ehr/ehrldrjava` |
+| `PROD/ehr/csi-ehr-listener-java-sev` | `PROD/ehr/ehrlistnerjava` |
+| `PROD/ehr/csi-ehr-opd-java-sev` | `PROD/ehr/ehropdjava` |
+| `PROD/ehr/csi-ehr-opd-patient-pomr-java-sev` | `PROD/ehr/ehrpomrjava` |
+| `PROD/ehr/csi-ehr-opd-ui` | `PROD/ehr/ehropdui` |
+| `PROD/ehr/csi-ehr-or-anesthesia-java-sev` | `PROD/ehr/ehroranesthesiajava` |
+| `PROD/ehr/csi-ehr-or-book-java-sev` | `PROD/ehr/ehrorbookjava` |
+| `PROD/ehr/csi-ehr-or-booking-java-sev` | `PROD/ehr/ehrorbookingjava` |
+| `PROD/ehr/csi-ehr-specialized-clinic-java-sev` | `PROD/ehr/ehrspecializedclinicjava` |
+| `PROD/ehr/csi-ehr-template-java-sev` | `PROD/ehr/ehrtemplatejava` |
+| `PROD/ehr/csi-workflow-automation-service-java-sev` | `PROD/ehr/workflow` |
+| `PROD/ehr/ehr-ic-ui` | `PROD/ehr/ehricui` |
+| `PROD/empi/csi-empi-crs-integration` | `PROD/empi/empicrsintegration` |
+| `PROD/empi/csi-empi-hijridate-service` | `PROD/empi/empihijridatedotnet` |
+| `PROD/empi/csi-empi-patient-registration-srv` | `PROD/empi/empiwritedotnet` |
+| `PROD/empi/csi-empi-patient-service-read` | `PROD/empi/empireaddotnet` |
+| `PROD/empi/csi-empi-webui` | `PROD/empi/empiui` |
+| `PROD/er/csi-ehr-er-functions-dotnet-sev` | `PROD/er/erfunctiondotnet` |
+| `PROD/er/csi-ehr-er-ui` | `PROD/er/ehrerui` |
+| `PROD/hhc/hhc-service` | `PROD/hhc/hhcservice` |
+| `PROD/hhc/hhc-ui` | `PROD/hhc/hhcui` |
+| `PROD/him/csi-health-information-srv` | `PROD/him/csinethimservi` |
+| `PROD/integration/csi-ie-general` | `PROD/integration/csiiegeneral` |
+| `PROD/integration/csi-ie-generalii` | `PROD/integration/ieintegration2` |
+| `PROD/integration/csi-ie-mobile` | `PROD/integration/csiiemobile` |
+| `PROD/lab/lab-labgui` | `PROD/lab/labui` |
+| `PROD/lab/lab-labmgt-srv` | `PROD/lab/labmgmtdotnet` |
+| `PROD/lab/lab-scheduled` | `PROD/lab/labscheduled` |
+| `PROD/lab/lab-vidaptor-integration` | `PROD/lab/labvidaptor` |
+| `PROD/notification/csi-net-base-email` | `PROD/notification/notynetbaseemail` |
+| `PROD/notification/csi-net-base-message-templates` | `PROD/notification/notynetbasetemplate` |
+| `PROD/notification/csi-net-base-notifications` | `PROD/notification/notynetbasenotification` |
+| `PROD/notification/csi-net-base-notifications-query` | `PROD/notification/notynetbasequery` |
+| `PROD/notification/csi-net-base-sms` | `PROD/notification/notynetbasesms` |
+| `PROD/notification/csi-net-base-wss` | `PROD/notification/notynetbasewss` |
+| `PROD/notification/noty-builder-ui` | `PROD/notification/noty-ui` |
+| `PROD/pharmacy/csi-java-ehr-ip-doctor-prescription` | `PROD/pharmacy/ehripprescriptionjava` |
+| `PROD/pharmacy/csi-net-base-integrations-medispan` | `PROD/pharmacy/medispan` |
+| `PROD/pharmacy/csi-phr-base` | `PROD/pharmacy/phrbasejava` |
+| `PROD/pharmacy/phr-pharmacygui` | `PROD/pharmacy/pharmacyui` |
+| `PROD/renal/ren-hemodialysis-srv` | `PROD/renal/renalnet` |
+| `PROD/reporting/csi-rf-file-uploader` | `PROD/reporting/reportingupload` |
+| `PROD/reporting/csi-rf-reportingservice` | `PROD/reporting/reportingengv2` |
+| `PROD/reporting/csi-streaming-etl` | `PROD/reporting/csistreamingetl` |
+| `PROD/reporting/report-studio-ui` | `PROD/reporting/reportstudio` |
+| `PROD/rms/csi-ds-dental-core-java-sev` | `PROD/rms/dsdental` |
+| `PROD/rms/csi-mlm-ui` | `PROD/rms/mlmui` |
+| `PROD/rms/csi-morgue-ui` | `PROD/rms/rmsmorgueui` |
+| `PROD/rms/csi-pms-adt-request-java-sev` | `PROD/rms/pmsadtrequest` |
+| `PROD/rms/csi-pms-adt-ui` | `PROD/rms/adtui` |
+| `PROD/rms/csi-rms-masterdata-java-sev` | `PROD/rms/rmsmasterdata` |
+| `PROD/rms/csi-rms-morgue-java-service` | `PROD/rms/rmsmorgue` |
+| `PROD/rms/csi-rms-reservation-java-sev` | `PROD/rms/rmsreservation` |
+| `PROD/rms/csi-rms-resource-registry-java-sev` | `PROD/rms/rmsresourceregistry` |
+| `PROD/rms/csi-rms-rules-java-sev` | `PROD/rms/rmsrules` |
+| `PROD/rms/csi-rms-ui` | `PROD/rms/rmsui` |
+| `PROD/rms/csi-setup-ui` | `PROD/rms/setupui` |
+| `PROD/security/csi-iam-service` | `PROD/security/securityiamservice` |
+| `PROD/security/csi-master-data-management-service` | `PROD/security/securitymasterdatamgt` |
+| `PROD/security/csi-roles-permissions-management-service` | `PROD/security/securityrolespermissions` |
+| `PROD/security/csi-ui-registry-service` | `PROD/security/securityuiregistry` |
 
 ## Git History - Git-only Renames (4)
 
@@ -148,7 +244,7 @@ No mismatches.
 
 ---
 
-## Unaffected PROD Folders (21)
+## Unaffected PROD Folders (19)
 
 Exist in PROD but have no matching rename in `final.md`. May need manual review.
 
@@ -168,9 +264,7 @@ Exist in PROD but have no matching rename in `final.md`. May need manual review.
 - `PROD/integration/vida-data-gateway`
 - `PROD/otp-service`
 - `PROD/pharmacy/csi-phr-cron`
-- `PROD/pharmacy/phrbasebgjava`
 - `PROD/reporting/csi-rf-jdbc-sink`
 - `PROD/rms/kafka-outbox-processor`
-- `PROD/security/securitycentralauth`
 - `PROD/security/securityiamcache`
 

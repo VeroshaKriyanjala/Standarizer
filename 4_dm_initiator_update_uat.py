@@ -20,13 +20,13 @@ except ImportError:
 
 DEFAULT_REPOS = {
     "KKUH": "/home/verosha/Documents/gittea/KKUH",
-    "Alibaba": "/home/verosha/Documents/gittea/Alibaba",
-    "WAVE1": "/home/verosha/Documents/gittea/WAVE1",
-    "CS": "/home/verosha/Documents/gittea/CS",
-    "KAUH": "/home/verosha/Documents/gittea/KAUH",
-    "S2": "/home/verosha/Documents/gittea/S2",
-    "S3": "/home/verosha/Documents/gittea/S3",
-    "HMG": "/home/verosha/Documents/gittea/HMG",
+    # "Alibaba": "/home/verosha/Documents/gittea/Alibaba",
+    # "WAVE1": "/home/verosha/Documents/gittea/WAVE1",
+    # "CS": "/home/verosha/Documents/gittea/CS",
+    # "KAUH": "/home/verosha/Documents/gittea/KAUH",
+    # "S2": "/home/verosha/Documents/gittea/S2",
+    # "S3": "/home/verosha/Documents/gittea/S3",
+    # "HMG": "/home/verosha/Documents/gittea/HMG",
 }
 
 ONERING_NAMES_FILE = Path(__file__).parent / "onering_repo_names.txt"

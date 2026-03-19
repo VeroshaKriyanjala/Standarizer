@@ -122,3 +122,20 @@ patchesJson6902:
           name: www-persistent-storage
           persistentVolumeClaim:
             claimName: nfs-pvc
+
+
+csi.uif.admin.ui -> csi-uif-admin-ui
+csi.uif.settings -> csi-uif-settings
+lab-labmgt_srv -> lab-labmgt-srv
+lab-vidaptorintegration -> lab-vidaptor-integration
+bb-donation_srv -> bb-donation-srv
+phrbasebgjava -> csi-phr-base-bgservice
+
+check hhc module names problems
+check him module can't find the repos
+
+
+
+find this
+security/securityiamcache
+

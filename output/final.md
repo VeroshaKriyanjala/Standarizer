@@ -235,6 +235,9 @@ Previous Name:  UAT/pharmacy/medispan
 Current Folder: UAT/pharmacy/csi-phr-base
 Previous Name:  UAT/pharmacy/phrbasejava
 ------------------------------------------------------------
+Current Folder: UAT/pharmacy/csi-phr-base-bgservice
+Previous Name:  UAT/pharmacy/phrbasebgjava
+------------------------------------------------------------
 Current Folder: UAT/pharmacy/phr-pharmacygui
 Previous Name:  UAT/pharmacy/pharmacyui
 ------------------------------------------------------------
@@ -300,6 +303,9 @@ Previous Name:  UAT/security/securityrolespermissions
 ------------------------------------------------------------
 Current Folder: UAT/security/csi-ui-registry-service
 Previous Name:  UAT/security/securityuiregistry
+------------------------------------------------------------
+Current Folder: UAT/security/csi-central-authentication-service
+Previous Name:  UAT/security/securitycentralauth
 ------------------------------------------------------------
 Current Folder: UAT/support-portal/support-portal
 Previous Name:  UAT/support-portal/csi-support-portal

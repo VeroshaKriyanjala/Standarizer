@@ -3,7 +3,7 @@
 Branch: `PROD-standardize-folder-names`
 Source: `/home/verosha/Documents/gittea/KKUH/PROD`
 
-Renamed: 93, Skipped: 0
+Renamed: 95, Skipped: 0
 
 ## Renamed
 
@@ -80,6 +80,7 @@ Renamed: 93, Skipped: 0
 | `pharmacy/ehripprescriptionjava` | `pharmacy/csi-java-ehr-ip-doctor-prescription` |
 | `pharmacy/medispan` | `pharmacy/csi-net-base-integrations-medispan` |
 | `pharmacy/pharmacyui` | `pharmacy/phr-pharmacygui` |
+| `pharmacy/phrbasebgjava` | `pharmacy/csi-phr-base-bgservice` |
 | `pharmacy/phrbasejava` | `pharmacy/csi-phr-base` |
 | `renal/renalnet` | `renal/ren-hemodialysis-srv` |
 | `reporting/csistreamingetl` | `reporting/csi-streaming-etl` |
@@ -98,6 +99,7 @@ Renamed: 93, Skipped: 0
 | `rms/rmsrules` | `rms/csi-rms-rules-java-sev` |
 | `rms/rmsui` | `rms/csi-rms-ui` |
 | `rms/setupui` | `rms/csi-setup-ui` |
+| `security/securitycentralauth` | `security/csi-central-authentication-service` |
 | `security/securityiamservice` | `security/csi-iam-service` |
 | `security/securitymasterdatamgt` | `security/csi-master-data-management-service` |
 | `security/securityrolespermissions` | `security/csi-roles-permissions-management-service` |
