@@ -19,6 +19,7 @@ Mode: LIVE
 | `ehr/csi-ehr-data-stream-core` | Replaced commented Sync reference with commented DM-Initiator |
 | `ehr/csi-ehr-data-stream-core` | Merged duplicate patchesJson6902 section (line 37) |
 | `ehr/csi-ehr-data-stream-core` | Added new sync-presync/sync-postsync Job patches |
+| `ehr/csi-ehr-data-stream-core` | Moved non-Job target from duplicate section into merged section |
 | `ehr/csi-ehr-data-stream-core` | Commented out line 38: - target: |
 | `ehr/csi-ehr-data-stream-core` | Commented out line 39: group: batch |
 | `ehr/csi-ehr-data-stream-core` | Commented out line 40: version: v1 |
@@ -53,7 +54,6 @@ Mode: LIVE
 | `ehr/csi-ehr-data-stream-core` | Commented out line 69: value: |
 | `ehr/csi-ehr-data-stream-core` | Commented out line 70: name: CSI_PARENT_MODULE_NAME |
 | `ehr/csi-ehr-data-stream-core` | Commented out line 71: value: "ehr" |
-| `ehr/csi-ehr-data-stream-core` | Moved non-Job target from duplicate section into merged section |
 | `ehr/csi-ehr-listener-java-sev` | Removed extra Sync reference: # - ../../../Sync-new/ |
 | `empi/csi-empi-crs-integration` | Updated Deployment target name: csi-net-empi-crs-inte -> csi-empi-crs-integration |
 | `empi/empi-db-sync/overlays` | Updated Deployment target name: csi-empi-db-sync -> overlays |

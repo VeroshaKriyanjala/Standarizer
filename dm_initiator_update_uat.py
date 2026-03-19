@@ -456,6 +456,7 @@ def replace_job_patches(content, deployment_name, csi_project_name):
     # - Add new Job targets after the first section key
 
     first_sec_start = sections[0][0]
+    first_sec_end = sections[0][1]
     duplicate_key_lines = set()  # lines to remove (duplicate patchesJson6902: keys)
     non_job_targets_to_move = []  # (lines_text) from later sections to append to first
     all_job_line_ranges = set()
@@ -510,13 +511,12 @@ def replace_job_patches(content, deployment_name, csi_project_name):
                 result_lines.append(new_line)
             changes.append("Added new sync-presync/sync-postsync Job patches")
 
-    # Append non-Job targets that were moved from duplicate sections
-    # These go at the end of the merged patchesJson6902 section
-    if non_job_targets_to_move:
-        for target_lines in non_job_targets_to_move:
-            for tl in target_lines:
-                result_lines.append(tl)
-            changes.append("Moved non-Job target from duplicate section into merged section")
+        # After the first section ends, insert non-Job targets moved from duplicate sections
+        if idx == first_sec_end and non_job_targets_to_move:
+            for target_lines in non_job_targets_to_move:
+                for tl in target_lines:
+                    result_lines.append(tl)
+                changes.append("Moved non-Job target from duplicate section into merged section")
 
     new_content = "\n".join(result_lines)
     return new_content, True, changes
