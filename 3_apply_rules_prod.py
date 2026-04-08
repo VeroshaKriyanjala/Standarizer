@@ -10,7 +10,7 @@ except ImportError:
     sys.exit(1)
 
 DEFAULT_REPOS = {
-    "KKUH": "/home/verosha/Documents/gittea/KKUH",
+    # "KKUH": "/home/verosha/Documents/gittea/KKUH",
     # "Alibaba": "/home/verosha/Documents/gittea/Alibaba",
     # "WAVE1": "/home/verosha/Documents/gittea/WAVE1",
     # "CS": "/home/verosha/Documents/gittea/CS",
@@ -18,6 +18,7 @@ DEFAULT_REPOS = {
     # "S2": "/home/verosha/Documents/gittea/S2",
     # "S3": "/home/verosha/Documents/gittea/S3",
     # "HMG": "/home/verosha/Documents/gittea/HMG",
+    "RSG": "/home/verosha/Documents/gittea/RSG",
 }
 
 DEPLOYMENT_BASE_REPO_PATH = Path("/home/verosha/Documents/gittea/DEPLOYMENT-BASE-REPO")

@@ -10,10 +10,16 @@ Previous Name:  UAT/base/baseutilityservicejava
 Current Folder: UAT/base/csi-personalization-service-java-sev
 Previous Name:  UAT/base/personalizationjava
 ------------------------------------------------------------
-Current Folder: UAT/base/csi.uif.admin.ui
+Current Folder: UAT/base/csi-uif-admin-ui
+Previous Name:  UAT/base/csi.uif.admin.ui
+------------------------------------------------------------
+Current Folder: UAT/base/csi-uif-admin-ui
 Previous Name:  UAT/base/formbuilderui
 ------------------------------------------------------------
-Current Folder: UAT/base/csi.uif.settings
+Current Folder: UAT/base/csi-uif-settings
+Previous Name:  UAT/base/csi.uif.settings
+------------------------------------------------------------
+Current Folder: UAT/base/csi-uif-settings
 Previous Name:  UAT/base/configui
 ------------------------------------------------------------
 Current Folder: UAT/billing/csi-bm-approval-java-service
@@ -187,8 +193,11 @@ Previous Name:  UAT/integration/csiiemobile
 Current Folder: UAT/lab/lab-labgui
 Previous Name:  UAT/lab/labui
 ------------------------------------------------------------
-Current Folder: UAT/lab/lab-labmgt_srv
+Current Folder: UAT/lab/lab-labmgt-srv
 Previous Name:  UAT/lab/labmgmtdotnet
+------------------------------------------------------------
+Current Folder: UAT/lab/lab-labmgt-srv
+Previous Name:  UAT/lab/lab-labmgt_srv
 ------------------------------------------------------------
 Current Folder: UAT/lab/lab-scheduled
 Previous Name:  UAT/lab/labscheduled

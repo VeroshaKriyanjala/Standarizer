@@ -5,7 +5,7 @@ from pathlib import Path
 from collections import defaultdict
 
 DEFAULT_REPOS = {
-    "KKUH": "/home/verosha/Documents/gittea/KKUH",
+    # "KKUH": "/home/verosha/Documents/gittea/KKUH",
     # "Alibaba": "/home/verosha/Documents/gittea/Alibaba",
     # "WAVE1": "/home/verosha/Documents/gittea/WAVE1",
     # "CS": "/home/verosha/Documents/gittea/CS",
@@ -13,6 +13,7 @@ DEFAULT_REPOS = {
     # "S2": "/home/verosha/Documents/gittea/S2",
     # "S3": "/home/verosha/Documents/gittea/S3",
     # "HMG": "/home/verosha/Documents/gittea/HMG",
+    "RSG": "/home/verosha/Documents/gittea/RSG",
 }
 
 OUTPUT_DIR = Path(__file__).parent / "output"
